@@ -63,7 +63,7 @@ function initOrder(){
 
 
 //点击确定按钮执行的函数
-function confirm(){ //判断如果信息没有选择完整，点击确定按钮会有提示
+function confirm(){
 	var item = 0;
 	for(var i=0;i<3;i++)
 	{
@@ -74,7 +74,7 @@ function confirm(){ //判断如果信息没有选择完整，点击确定按钮�
 	}
 	if(item != 0)
 	{
-		alert("信息填写不全，请重新填写!"); //提示信息
+		alert("信息填写不全，请重新填写!");
 	}else{
 	window.localStorage.people += localStorage.getItem("users")+"*"; //获取当前人名
 	window.localStorage.room += localStorage.getItem("restaurants")+"*"; //获取当前餐厅

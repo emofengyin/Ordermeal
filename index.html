@@ -9,15 +9,30 @@
     <script src="lib/jquery.js"></script>
 	<script src="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
 
-    <script src='data/foods.json' type='text/javascript'></script>
-    <script src='data/restaurants.json' type='text/javascript'></script>
-    <script src='data/users.json' type='text/javascript'></script>
-
     <script src="js/application.js"></script>
-
 </head>
 <body>
-Write code here.
-</body>
+		<div data-role="header">
+			<a href="ordermeal.html">back</a>
+			<h1>订餐</h1>
+		</div>
+		<div data-role="content">
+			<label for="basic">人:</label>
+			<input type="text" id="users" value="" readOnly="true"/>
+			<button onclick=location='./selectpeople.html' >选人</button>
+			<label for="basic">餐厅:</label>
+			<input type="text" id="restaurants" value="" readOnly="true"/>
+			<button onclick=location='./selectrestaurants.html'>选餐厅</button>
+
+			<label for="basic">套餐:</label>
+			<input type="text" id="foods" value="" readOnly="true"/>
+			<button onclick="isOrnot();">选套餐</button>
+
+			<button onclick="confirm();">确认</button>
+
+		</div>
+		<script>
+			initOrder(); //调用initOrder方法
+		</script>
 </body>
 </html>
