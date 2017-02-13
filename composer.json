@@ -1,0 +1,14 @@
+{
+  "name": "xunuofeng/Ordermeal",
+  "license": "proprietary",
+  "type": "project",
+  "authors": [{
+    "name": "xunuofeng",
+    "email": "670970483@qq.com",
+    "role": "developer"
+  }],
+  
+  "require": {
+    "php": ">=5.4.0",
+  }
+}
